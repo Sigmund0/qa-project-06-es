@@ -11,10 +11,6 @@ def post_new_user(body):
 
 response = post_new_user(data.user_body);
 token=response.json()["authToken"]
-print(response.status_code)
-print(response.json())
-print(token)
-
 
 def post_new_client_kit(kit_body, auth_token):
     headers=data.headers
